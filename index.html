@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Люди Великой страны: День народного единства, традиции и культура народов России.">
+    <title>Люди Великой страны — Мы вместе</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="ornament-divider" aria-hidden="true"></div>
+
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="#about" class="logo-area">
+                <img src="images/dovewebp" alt="Голубь мира" width="30" style="vertical-align: middle; margin-right: 8px;">
+                <span class="logo-text">Люди Великой страны</span>
+            </a>
+            <button type="button" class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="menu">Меню</button>
+            <nav class="main-nav" id="menu" aria-label="Навигация по сайту">
+                <ul>
+                    <li><a href="#about">О проекте</a></li>
+                    <li><a href="#unity">Единство и Символы</a></li>
+                    <li><a href="#ornaments">Орнаменты</a></li>
+                    <li><a href="#peoples">Народы</a></li>
+                    <li><a href="#quiz">Викторина</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-section" id="about">
+            <div class="container hero-grid">
+                <div>
+                    <span class="badge">4 Ноября — День народного единства</span>
+                    <h1 class="hero-title">Единство в многообразии и традициях</h1>
+                    <p class="hero-subtitle">
+                        Россия — дом для более чем 190 народов. Нас объединяет общая история, взаимное уважение,
+                        богатейшие традиции, теплота сердец и стремление к созиданию.
+                    </p>
+                    <a href="#ornaments" class="btn btn-primary">Исследовать узоры России</a>
+                </div>
+                <div>
+                    <div class="hero-card">
+                        <div class="dove-illustration"><img src="images/dovewebp" alt="Голубь мира" width="120"></div>
+                        <h2>Мы вместе — Сила</h2>
+                        <p>
+                            Голубь мира и традиционный орнамент — символ согласия, духовности и единства народов нашей страны.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="unity">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Что нас объединяет</h2>
+                    <p>Фундамент нашей страны — это ценности, передающиеся из поколения в поколение</p>
+                </div>
+                <div class="grid-cards">
+                    <article class="card-item">
+                        <div class="card-icon-img"><img src="images/friendshipwebp" alt="Взаимовыручка и Дружба" width="80"></div>
+                        <h3>Взаимовыручка и Дружба</h3>
+                        <p>На протяжении веков совместный труд, сопереживание и протянутая рука помощи поддерживают народы России.</p>
+                    </article>
+                    <article class="card-item">
+                        <div class="card-icon-img"><img src="images/traditionswebp" alt="Традиции и Ремесла" width="80"></div>
+                        <h3>Традиции и Ремесла</h3>
+                        <p>Уникальные орнаменты, народные костюмы, сказки и музыка составляют великое культурное достояние.</p>
+                    </article>
+                    <article class="card-item">
+                        <div class="card-icon-img"><img src="images/familywebp" alt="Семейные Ценности" width="80"></div>
+                        <h3>Семейные Ценности</h3>
+                        <p>Любовь к родному дому, уважение к старшим и бережное отношение к наследию предков.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <div class="ornament-divider" aria-hidden="true"></div>
+
+        <section id="ornaments">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Природные орнаменты народов России</h2>
+                    <p>Нажмите на народность, чтобы узнать значение традиционного узора</p>
+                </div>
+                <div class="ethno-gallery">
+                    <div class="ornament-chips" role="group" aria-label="Народы">
+                        <button type="button" class="chip active" data-key="russian" aria-pressed="true">Русские</button>
+                        <button type="button" class="chip" data-key="karelian" aria-pressed="false">Карелы</button>
+                        <button type="button" class="chip" data-key="tatar" aria-pressed="false">Татары</button>
+                        <button type="button" class="chip" data-key="buryat" aria-pressed="false">Буряты</button>
+                        <button type="button" class="chip" data-key="yakut" aria-pressed="false">Якуты (Саха)</button>
+                    </div>
+                    <div class="ornament-display">
+                        <div class="ornament-preview" id="znak"><img src="images/ornament-ruwebp" alt="Орнамент" width="90"></div>
+                        <div>
+                            <h3 id="nazvanie">Русский природный орнамент</h3>
+                            <p id="opisanie">
+                                Цветочные розаны и пышные веточки символизируют цветущую Землю, плодородие, домашний уют и радость.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="peoples">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Разнообразие культур</h2>
+                    <p>Каждый уголок страны внес свой неповторимый вклад в историю</p>
+                </div>
+                <div class="peoples-grid">
+                    <article class="people-card">
+                        <div class="people-icon-img"><img src="images/region-caucasuswebp" alt="Кавказ" width="90" style="border-radius: 50%;"></div>
+                        <h3>Кавказ</h3>
+                        <p>Гостеприимство, гордость и старинные башенные комплексы.</p>
+                    </article>
+                    <article class="people-card">
+                        <div class="people-icon-img"><img src="images/region-volgawebp" alt="Поволжье" width="90" style="border-radius: 50%;"></div>
+                        <h3>Поволжье</h3>
+                        <p>Сплетение славянских, тюркских и финно-угорских традиций.</p>
+                    </article>
+                    <article class="people-card">
+                        <div class="people-icon-img"><img src="images/region-siberiawebp" alt="Сибирь" width="90" style="border-radius: 50%;"></div>
+                        <h3>Сибирь</h3>
+                        <p>Широта души, богатая тайга и гармония с духом природы.</p>
+                    </article>
+                    <article class="people-card">
+                        <div class="people-icon-img"><img src="images/region-northwebp" alt="Север" width="90" style="border-radius: 50%;"></div>
+                        <h3>Север</h3>
+                        <p>Мудрость оленеводов, северное сияние и узоры из кости.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="quiz">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Проверь свои знания</h2>
+                    <p>Короткая интерактивная загадка о культуре России</p>
+                </div>
+                <div class="quiz-card">
+                    <h3>Какой символ традиционно олицетворяет мир, согласие и благую весть?</h3>
+                    <div class="quiz-options">
+                        <button type="button" class="quiz-btn" data-correct="false">Жар-птица</button>
+                        <button type="button" class="quiz-btn" data-correct="true">Белый голубь с оливковой/зеленой ветвью</button>
+                        <button type="button" class="quiz-btn" data-correct="false">Золотой кочет</button>
+                    </div>
+                    <p id="otvet" aria-live="polite"></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <h2>Люди Великой страны</h2>
+                <p>
+                    Страница о Дне народного единства: об истории, традициях и культурах народов России.
+                </p>
+            </div>
+            <nav aria-label="Навигация в подвале">
+                <h2>Навигация</h2>
+                <ul>
+                    <li><a href="#about">О проекте</a></li>
+                    <li><a href="#unity">Единство</a></li>
+                    <li><a href="#ornaments">Орнаменты</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Творческий проект «Люди Великой страны».</p>
+        </div>
+    </footer>
+
+    <script src="main.js" defer></script>
+</body>
+</html>
